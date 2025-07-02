@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <style>
+    .gridContainer {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 240px);
+      gap: 60px;
+      padding: 10px;
+    }
+    .items {
+      background-color: rgb(254, 253, 253);
+      color: black;
+      border: 2px solid rgb(251, 248, 248);
+      padding: 10px;
+      text-align: center;
+    }
+    .items img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+    .h1{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    
+    
+  </style>
+</head>
+<body>
+  <h1>WIXBlog</h1>
+
+  <select>
+    <option>Categories</option>
+    <option>Website Essentials</option>
+    <option>Business Strategies</option>
+  </select>
+
+  <select>
+    <option>Resources</option>
+    <option>WIX Encyclopedia</option>
+  </select>
+
+  <a href="https://wix.com" target="_blank">wix.com</a>
+
+  <center>
+    <h1>Ultimate Guides</h1>
+    <h2>Want to take your knowledge to the next level? Master new skills and accomplish your goals using our in-depth guides.</h2>
+  </center>
+
+  <div class="gridContainer">
+    <div class="items">
+      <img src="https://i.pinimg.com/736x/b8/52/f2/b852f28ef776205370080f5c27afb791.jpg" />
+      <h2>How to start a blog</h2>
+    </div>
+    <div class="items">
+      <img src="https://i.pinimg.com/736x/e2/3e/b0/e23eb09908c6fe9b380a2c8f3151a5ef.jpg" />
+      <h2>What is a domain name and why it matters</h2>
+    </div>
+    <div class="items">
+      <img src="https://i.pinimg.com/736x/0f/75/c7/0f75c7c52eee64d65cdd4fcf91641be8.jpg" />
+      <h2>Create a website</h2>
+    </div>
+    <div class="items">
+      <img src="https://i.pinimg.com/736x/f7/48/45/f74845e2478cd379add8e1eefa099ce3.jpg" />
+      <h2>25+ best website designs</h2>
+    </div>
+    <div class="items">
+      <img src="https://i.pinimg.com/736x/49/a5/cb/49a5cb219a983838af120b6f83e9c32f.jpg" />
+      <h2>Designs for business</h2>
+    </div>
+  </div>
+</body>
+</html>
