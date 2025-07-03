@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Guess My Number</title>
+  <script src="guessgame.js" defer></script> 
+
+</head>
+<style>
+    body {
+  background-color: #222;
+  color: #fff;
+  font-family: 'Courier New', Courier, monospace;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.number {
+  font-size: 3rem;
+  background-color: #fff;
+  color: #222;
+  padding: 10px 30px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.guess-input {
+  width: 60px;
+  font-size: 1.2rem;
+  padding: 5px;
+  text-align: center;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.message {
+  margin-top: 15px;
+  font-size: 1.2rem;
+}
+
+.score,
+.highscore {
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 400px;
+  margin-bottom: 30px;
+}
+
+.again-btn {
+  background-color: #eee;
+  border: none;
+  font-size: 1rem;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+</style>
+<body>
+  <div class="container">
+    <div class="top-bar">
+      <button class="again-btn" onclick="resetGame()">Again</button>
+      <span>(Between 1 and 20)</span>
+    </div>
+
+    <h1>Guess My Number</h1>
+    <div class="number">?</div>
+
+    <p>Start Guessing ...</p>
+    <input type="number" class="guess-input" min="1" max="20" />
+    <br />
+    <button class="btn" onclick="checkGuess()">Check</button>
+
+    <div class="message"></div>
+    <div class="score">Score : 20</div>
+    <div class="highscore">Highscore : 0</div>
+  </div>
+
+  <script src="guessgame.js"></script>
+</body>
+</html>
